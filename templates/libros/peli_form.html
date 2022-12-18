@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block titulo %}Ingreso/Modificación de peliculas {% endblock %}
+{% block titulo_principal %} Ingreso/Modificación de Peliculas{% endblock %}
+{% block principal %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <input type = "submit" value ="grabar">
+    </form> 
+{% endblock %}  

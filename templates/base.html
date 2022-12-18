@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <title>{% block titulo %} Sistema Admin {% endblock %}</title>
+    </head>
+    <body>
+        <img src="{% static 'images/logo.png' %}" />
+        <ul class = "barra">
+            <li>Iniciojjjjjjjjjjjjjjjjj</li>
+            <li>Quienes somos</li>
+            <li>Contacto</li>
+        </ul>
+        <h3>{% block titulo_principal %}{% endblock %}</h3>
+        <h4>{% block titulo_secundario %}{% endblock %}</h4>
+        {% block principal %}{% endblock %}
+        <footer>
+            <small>&copy; Mi aplicación de Django</small>
+        </footer>
+    </body>
+<html>

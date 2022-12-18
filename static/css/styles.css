@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(194, 241, 243);
+}
+.tabla-cliente{
+    background-color: rgb(136, 129, 148);
+}
+.barra li{
+    display: inline;
+    padding:0px 0px 0px 20px;
+    font-size: 25px;
+    background-color: rgb(193, 182, 231);
+}
+footer{
+    padding-top: 100px;
+}

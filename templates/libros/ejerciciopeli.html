@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block titulo_secundario %}Dato de peliculas{% endblock %}
+{% block principal %}
+
+ 
+        <table class=""tabla-cliente>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha de estreno</th>
+                    <th>Para mayores de</th>
+                    <th>Preventa online?</th>
+                </tr>
+            </thead>
+        
+            <tr>
+                <td> {{ form.nombre }}</td>
+                <td> {{ form.fechaEst }}</td>
+                <td> {{ form.mayoresDe }}</td>
+
+                {% if form.online %}
+                   <td>SI</td>  
+                {% else %}
+                   <td>NO</td> 
+                {% endif %}
+                    
+                
+            </tr>
+    
+        </table>
+
+{% endblock %}

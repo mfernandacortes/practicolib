@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block principal %}
+    <h2>Listado de Localidades (desde la base de datos)</h2>
+<table class="tabla-cliente">
+    <thead>
+        <th>
+            <tr>Nombre</tr> 
+            <tr>Código Postal</tr>
+            <tr>Provincia</tr>
+        </th>
+    </thead>
+    {% for localidad in localidades %}
+    <tr>
+        <td>{{ localidad.nombre }}</td>
+        <td>{{ localidad.cp }}</td>
+        <td>{{ localidad.provincia }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+    
+    

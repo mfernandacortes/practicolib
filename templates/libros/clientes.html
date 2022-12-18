@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block principal %}
+    <h2>Listado de Clientes (desde la base de datos)</h2>
+<table class="tabla-cliente">
+    <thead>
+        <th>
+            <tr>Nombre</tr> 
+            <tr>Apellido</tr>
+            <tr>Edad</tr>
+        </th>
+    </thead>
+    {% for cliente in clientes %}
+    <tr>
+        <td>{{ cliente.nombre }}</td>
+        <td>{{ cliente.apellido }}</td>
+        <td>{{ cliente.edad }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+    
+    

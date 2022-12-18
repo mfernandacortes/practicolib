@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block titulo %}Listado de autores{% endblock %}
+{% block titulo_principal %}Administración de autores{% endblock %}
+{% block titulo_secundario %}Listado{% endblock %}
+{% block principal %}
+    <table class=""tabla-cliente>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        {% for nombre, apellido in autor %}
+        <tr>
+            <td> {{ nombre }}</td>
+            <td> {{ apellido }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
